@@ -1,0 +1,6 @@
+﻿  main.c
+  peng_key.c
+D:\code\CProject\Components\peng_key\peng_key\peng_key\peng_key.c(16,33): warning C4090: “函数”: 不同的“const”限定符
+  pk_io.c
+  正在生成代码...
+  peng_key.vcxproj -> D:\code\CProject\Components\peng_key\x64\Debug\peng_key.exe

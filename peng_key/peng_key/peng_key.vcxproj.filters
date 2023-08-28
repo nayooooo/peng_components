@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{79881c89-015f-468d-9135-51254aae9250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="peng_key">
+      <UniqueIdentifier>{64bd623c-7960-4632-b23c-e64272b1d5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\inc">
+      <UniqueIdentifier>{60490993-0aca-4d0e-9b8d-ee31c54ba3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\src">
+      <UniqueIdentifier>{a7dadeb1-d11a-4c51-9d1c-7caacc0e3700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="peng_key\inc">
+      <UniqueIdentifier>{4bfb8ed4-25e0-4e1e-9f37-e9ebd8e3d25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="peng_key\src">
+      <UniqueIdentifier>{89da53d9-34ff-4920-bd58-4811982b47e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="object\object.c">
+      <Filter>object\src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="peng_key\peng_key.c">
+      <Filter>peng_key\src</Filter>
+    </ClCompile>
+    <ClCompile Include="peng_key\pk_io.c">
+      <Filter>peng_key\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="object\object.h">
+      <Filter>object\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="peng_key\peng_key.h">
+      <Filter>peng_key\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
