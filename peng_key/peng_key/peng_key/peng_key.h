@@ -24,11 +24,11 @@ struct peng_key {
 	struct object parent;
 
 	peng_key_infor_t ki;
+	obj_size_t key_num;
 
 	const char*		(*name)			(struct peng_key* k);
 
 	peng_key_infor_t(*find)			(peng_key_infor_t ki, obj_base_t id);
-	obj_size_t		(*count)		(peng_key_infor_t ki);
 };
 typedef struct peng_key* peng_key_t;
 

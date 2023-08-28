@@ -16,12 +16,12 @@ obj_err_t peng_key_init(struct peng_key* k, const char* name)
 	obj_memcpy(k->parent.name, name, sizeof(k->parent.name));
 	k->parent.flag = 0;
 
-	obj_size_t key_num = 0;
-	while (pk_id_act_hash[key_num++].id != 0);
-	key_num--;
-	k->ki = obj_malloc(key_num * sizeof(struct peng_key_infor));
+	k->key_num = 0;
+	while (pk_id_act_hash[k->key_num++].id != 0);
+	k->key_num--;
+	k->ki = obj_malloc(k->key_num * sizeof(struct peng_key_infor));
 	if (k->ki == OBJ_NULL) return -OBJ_ERROR;
-	for (obj_size_t i = 0; i < key_num; i++) {
+	for (obj_size_t i = 0; i < k->key_num; i++) {
 		k->ki[i].id = pk_id_act_hash[i].id;
 		k->ki[i].state = key_error;
 	}
